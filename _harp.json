@@ -1,0 +1,8 @@
+{
+  "_basicAuth": ["user:pass"],
+  "globals": {
+    "title": "Agency Revolution DIO",
+    "author": "The Design Department",
+    "description": "Your protected first!"
+  }
+}
