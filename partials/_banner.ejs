@@ -1,5 +1,13 @@
 <header role="banner">
-  <div class="header-wrap">
-    <%- partial("_top-bar") %>
+  <div class="row full-width" data-equalizer>
+    <div class="header__brand" data-equalizer-watch>
+      <a id="dnn_ctl00_ctl06_hypLogo" title="<%= title %>" href="/">
+        <img src="images/logo.png" alt="<%= title %>">
+      </a>
+    </div>
+    <div class="header__details" data-equalizer-watch>
+      <div class="header__phone"><%= phone %></div>
+    </div>
   </div>
+  <%- partial("../components/_top-bar", { hasName: false }) %>
 </header>

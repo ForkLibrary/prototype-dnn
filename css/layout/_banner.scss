@@ -1,0 +1,27 @@
+[role="banner"] {
+  > .row {
+    padding: 20px 0;
+  }
+}
+
+.header {
+
+  &__brand {
+    @extend .medium-6;
+    @extend .columns;
+    color: white;
+  }
+
+  &__details {
+    @extend .medium-6;
+    @extend .columns;
+    @extend .text-right;
+  }
+
+  &__phone {
+    font-weight: bold;
+    font-size: rem-calc(26);
+    line-height: 1;
+  }
+
+}

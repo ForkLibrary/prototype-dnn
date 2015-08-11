@@ -1,24 +1,34 @@
 <!doctype html>
-<html class="no-js">
-<head>
+<html class="no-js" lang="en-US">
+<head itemscope itemtype="http://schema.org/WebSite">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Index</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+  <title itemprop="name"><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" async></script>
 </head>
 <body>
-  <%- partial("partials/_banner", {title: "Home Title"}) %>
 
-  <%- yield %>
+  <% if(offcanvas == true) { %>
+    <%- partial("components/_offcanvas") %>
+  <% } else { %>
 
-  <%- partial("partials/_contentinfo") %>
+    <%- partial("partials/_main") %>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" async></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js" async></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js" async></script>
+  <% } %>
+
+
+<% if(environment == "production") { %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" async></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js" async></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js" async></script>
+<% } else { %>
+  <script src="/node_modules/jquery/dist/jquery.js" async></script>
+  <script src="/node_modules/fastclick/lib/fastclick.js" async></script>
+  <script src="/node_modules/foundation-sites/js/foundation.js" async></script>
+<% } %>
 <script src="js/main.js" async></script>
 
 </body>

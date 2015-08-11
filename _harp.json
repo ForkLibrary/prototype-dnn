@@ -1,8 +1,15 @@
 {
   "_basicAuth": ["user:pass"],
   "globals": {
-    "title": "Agency Revolution DIO",
-    "author": "The Design Department",
-    "description": "Your protected first!"
+    "title": "Prototype Insurance",
+    "author": "Agency Revolution",
+    "authorUrl": "www.agencyrevolution.com",
+    "description": "Your protected first!",
+    "phone": "800-606-0477",
+    "facebookUser": "agencyrevolution",
+    "twitterUser": "agencyrev",
+    "linkedinUser": "agency-revolution",
+    "googlePlusUser": "+1234567",
+    "offcanvas": true
   }
 }

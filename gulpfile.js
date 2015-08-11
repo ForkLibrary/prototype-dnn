@@ -24,10 +24,13 @@ gulp.task('serve', function () {
     gulp.watch("css/**/*.scss", function () {
       reload("css/main.css", {stream: true});
     });
+    gulp.watch("js/**/*.js", function () {
+      reload("js/main.js", {stream: true});
+    });
     /**
      * Watch for all other changes, reload the whole page
      */
-    gulp.watch(["*.ejs", "partials/*.ejs"], function () {
+    gulp.watch(["**/*.ejs"], function () {
       reload();
     });
   })

@@ -1,7 +1,11 @@
 $(document).ready(function() {
   'use strict';
 
-  $(document).foundation();
+  $(document).foundation({
+    offcanvas: {
+      open_method: 'overlap'
+    }
+  });
 
   // do something
 
