@@ -30,7 +30,7 @@ gulp.task('serve', function () {
     /**
      * Watch for all other changes, reload the whole page
      */
-    gulp.watch(["**/*.ejs"], function () {
+    gulp.watch(["**/*.ejs", "**/*.md"], function () {
       reload();
     });
   })

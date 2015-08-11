@@ -1,14 +1,23 @@
 <footer role="contentinfo">
 <div class="footer-top row">
-  <div class="small-12 columns text-center">
+  <div class="small-12 columns text-center panel">
     <h4>
     We want to protect what matters most to you,
     <a href="/insurance-quotes">get a quote.</a>
     </h4>
   </div>
 </div>
-<div class="footer-bottom text-center">
-  <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> <%= title %>, All Rights Reserved. Prototype by <a href="http://<%= authorUrl %>"><%= author %></a> in Oregon</p>
-  <span class="social"><%- partial("_social") %></span>
+<div class="footer-bottom row text-center">
+  <div class="small-12 columns">
+    <hr>
+    <div class="row">
+      <div class="large-3 columns">
+        <%- partial("_social") %>
+      </div>
+      <div class="large-9 columns text-right">
+        <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> <%= title %>, All Rights Reserved. Prototype by <a href="http://<%= authorUrl %>"><%= author %></a> in Oregon</p>
+      </div>
+    </div>
+  </div>
 </div>
 </footer>

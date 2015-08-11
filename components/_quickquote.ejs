@@ -1,0 +1,37 @@
+<div class="qquote row">
+  <div class="quick-quote-title dnnSortable ui-sortable">
+    <h2>Trust Us To Protect Your Business</h2>
+  </div>
+  <div class="qq-col">
+    <select id="e_1" class="e_1"> 
+      <option value="/personal/auto-insurance">Auto Insurance</option>
+      <option value="/personal/home-insurance">Home Insurance</option>
+      <option value="/commercial-insurance">Commercial</option>
+      <option value="/commercial/workers-compensation">Workers Compensation</option>
+    </select>
+  </div>
+  <div class="qq-col2">
+      <input id="e_2" class="e_2 hint" maxlength="5" value="Zip Code" type="text">
+  </div>
+  <div class="qq-col3">
+      <div id="saveForm" class="button expand"><i class="fa fa-check"></i></div>
+  </div> 
+  <script>   
+      function getQuote(){ 
+          location.href = $("#e_1 option:selected").val() + "#quote/" + $("#e_2").val(); 
+      }
+      $("#saveForm").click(function () {
+          getQuote();
+          return false; 
+      });
+      $("#e_2").keypress(function(a) { 
+          if (a.keyCode == 13) { 
+              getQuote();
+              return false;
+          } 
+      });
+      $("#e_2").focus(function(){
+          $(this).removeClass("hint").val("")
+      });
+  </script>
+</div>
