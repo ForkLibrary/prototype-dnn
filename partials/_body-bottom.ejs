@@ -1,0 +1,13 @@
+<% if(environment == "production") { %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" async></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js" async></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js" async></script>
+<% } else { %>
+  <script src="/node_modules/jquery/dist/jquery.js" async></script>
+  <script src="/node_modules/fastclick/lib/fastclick.js" async></script>
+  <script src="/node_modules/foundation-sites/js/foundation.js" async></script>
+<% } %>
+<script src="/js/main.js" async></script>
+
+</body>
+</html>

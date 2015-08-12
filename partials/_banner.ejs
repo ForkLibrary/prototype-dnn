@@ -1,11 +1,11 @@
 <header role="banner">
-  <div class="row full-width" data-equalizer>
+  <div class="banner__wrap" data-equalizer>
     <div class="header__brand" data-equalizer-watch>
       <%- partial("../components/_offcanvas-menu") %>
       <%- partial("_logo") %>
     </div>
     <div class="header__details" data-equalizer-watch>
-      <div class="header__phone"><%= phone %></div>
+      <div class="header__phone"><i class="fi-telephone"></i> <%= phone %></div>
     </div>
   </div>
   <%- partial("../components/_top-bar", { hasName: false }) %>

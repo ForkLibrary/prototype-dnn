@@ -1,3 +1,10 @@
+// Make sure the charset is set appropriately
+@charset 'UTF-8';
+
+@import '../node_modules/foundation-sites/scss/normalize';
+
+@import 'settings';
+
 @import '../node_modules/foundation-sites/scss/foundation/components/grid';
 // @import '../node_modules/foundation-sites/scss/foundation/components/accordion';
 // @import '../node_modules/foundation-sites/scss/foundation/components/alert-boxes';
@@ -5,7 +12,7 @@
 // @import '../node_modules/foundation-sites/scss/foundation/components/breadcrumbs';
 // @import '../node_modules/foundation-sites/scss/foundation/components/button-groups';
 @import '../node_modules/foundation-sites/scss/foundation/components/buttons';
-@import '../node_modules/foundation-sites/scss/foundation/components/clearing';
+// @import '../node_modules/foundation-sites/scss/foundation/components/clearing';
 // @import '../node_modules/foundation-sites/scss/foundation/components/dropdown';
 // @import '../node_modules/foundation-sites/scss/foundation/components/dropdown-buttons';
 // @import '../node_modules/foundation-sites/scss/foundation/components/flex-video';
@@ -17,12 +24,12 @@
 // @import '../node_modules/foundation-sites/scss/foundation/components/labels';
 // @import '../node_modules/foundation-sites/scss/foundation/components/magellan';
 // @import '../node_modules/foundation-sites/scss/foundation/components/orbit';
-@import '../node_modules/foundation-sites/scss/foundation/components/pagination';
+// @import '../node_modules/foundation-sites/scss/foundation/components/pagination';
 @import '../node_modules/foundation-sites/scss/foundation/components/panels';
 // @import '../node_modules/foundation-sites/scss/foundation/components/pricing-tables';
-@import '../node_modules/foundation-sites/scss/foundation/components/progress-bars';
+// @import '../node_modules/foundation-sites/scss/foundation/components/progress-bars';
 // @import '../node_modules/foundation-sites/scss/foundation/components/range-slider';
-@import '../node_modules/foundation-sites/scss/foundation/components/reveal';
+// @import '../node_modules/foundation-sites/scss/foundation/components/reveal';
 @import '../node_modules/foundation-sites/scss/foundation/components/side-nav';
 // @import '../node_modules/foundation-sites/scss/foundation/components/split-buttons';
 // @import '../node_modules/foundation-sites/scss/foundation/components/sub-nav';
@@ -36,6 +43,6 @@
 @import '../node_modules/foundation-sites/scss/foundation/components/offcanvas';
 @import '../node_modules/foundation-sites/scss/foundation/components/visibility';
 
-@import 'settings';
+@import 'utilities/placeholders';
 @import 'layout/base';
 @import 'components/all';

@@ -6,10 +6,17 @@
     "authorUrl": "www.agencyrevolution.com",
     "description": "Your protected first!",
     "phone": "800-606-0477",
+    "address": "686 NW York Dr. #100",
+    "city": "Bend",
+    "state": "OR",
+    "postal": "97703",
     "facebookUser": "agencyrevolution",
     "twitterUser": "agencyrev",
     "linkedinUser": "agency-revolution",
     "googlePlusUser": "+Agencyrevolution",
     "offcanvas": false
+  },
+  "service": {
+    "analytics": "UA-"
   }
 }
