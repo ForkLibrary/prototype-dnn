@@ -13,9 +13,13 @@
   &__bottom {
     @extend %row;
 
-    &__wrapper { @extend %small-12; }
+    &__wrapper {
+      @extend %small-12;
+    }
 
-    &__inner { @extend %row; }
+    &__inner {
+      @extend %row;
+    }
   }
 
   &__social {
@@ -23,12 +27,6 @@
     @extend %large-3;
 
     ul { @extend %inline-list; }
-
-    a {
-      font-size: 35px;
-      line-height: .1;
-    }
-
   }
 
   &__credit {
@@ -36,8 +34,16 @@
     @extend %large-9;
     @extend %medium-text-right;
 
-    .copyright { font-size: rem-calc(10); }
+    .copyright {
+      font-size: rem-calc(10);
+    }
 
   }
 }
 
+.social {
+  a {
+    font-size: 35px;
+    line-height: .1;
+  }
+}

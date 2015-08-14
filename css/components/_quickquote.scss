@@ -1,0 +1,19 @@
+.qquote {
+  @extend %medium-6;
+
+  &__postal {
+    @extend %medium-5;
+  }
+
+  &__niches {
+    @extend %medium-6;
+    @extend %medium-push-1;
+  }
+
+  &__button {
+    @extend %button;
+    @extend %button--success;
+    @extend %button--expand;
+    margin-top: 1em;
+  }
+}

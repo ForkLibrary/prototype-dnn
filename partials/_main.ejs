@@ -1,24 +1,16 @@
-<%- partial("_banner") %>
-
-<div class="page-template page-template-index">
-
-  <section class="main" role="main">
-    <div id="TopPane" class="top">
-      <%- partial("_top") %>
+<section class="main" role="main">
+  <div id="TopPane" class="top">
+    <%- partial("_top") %>
+  </div>
+  <div class="wrap">
+    <div id="AsidePane" class="aside" role="complementary">
+      <%- partial("_aside") %>
     </div>
-    <div class="wrap">
-      <div id="AsidePane" class="aside" role="complementary">
-        <%- partial("_aside") %>
-      </div>
-      <div id="ContentPane" class="content">
-        <%- yield %>
-      </div>
+    <div id="ContentPane" class="content">
+      <%- yield %>
     </div>
-    <div id="BottomPane" class="bottom" runat="server">
-      <%- partial("_bottom") %>
-    </div>
-  </section>
-
-</div>
-
-<%- partial("_contentinfo") %>
+  </div>
+  <div id="BottomPane" class="bottom" runat="server">
+    <%- partial("_bottom") %>
+  </div>
+</section>

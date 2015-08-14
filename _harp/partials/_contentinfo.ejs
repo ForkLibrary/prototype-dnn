@@ -1,0 +1,24 @@
+<footer role="contentinfo">
+<div class="footer__top">
+  <div class="footer__top__wrapper">
+    <h4>
+    We want to protect what matters most to you,
+    <a href="/insurance-quotes">get a quote.</a>
+    </h4>
+  </div>
+</div>
+<div class="footer__bottom">
+  <div class="footer__bottom__wrapper">
+    <hr>
+    <div class="footer__bottom__inner">
+      <div class="footer__social">
+        <%- partial("_social") %>
+      </div>
+      <div class="footer__credit">
+        <div class="footer__address"><%- partial("_address") %></div>
+        <p class="copyright">&copy; <script>document.write(new Date().getFullYear());</script> <%= title %>, All Rights Reserved. Prototype by <a href="http://<%= authorUrl %>"><%= author %></a> in Oregon</p>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
