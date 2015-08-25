@@ -1,8 +1,9 @@
-@import 'foundation/grid';
+@import 'foundation/accordion';
+@import 'foundation/alert-boxes';
 @import 'foundation/buttons';
-@import 'foundation/visibility';
+@import 'foundation/grid';
+@import 'foundation/inline-list';
+@import 'foundation/panels';
 @import 'foundation/type';
+@import 'foundation/visibility';
 
-%inline-list { @include inline-list; }
-
-%hide-for-medium-up { @media #{$medium-up} { display: none; } }
