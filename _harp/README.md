@@ -5,7 +5,10 @@ A ready-to-go Gulp and Harp project set up that does auto css injection via Brow
 You can set it via Harp with:
 
 ```console
-harp init -b agencyrevolution/prototype-dnn#gh-pages
+harp init -b agencyrevolution/prototype-dnn#gh-pages project-name
+cd project-name/_harp
+npm install
+gulp
 ```
 
 Then, success.
