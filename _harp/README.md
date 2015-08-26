@@ -19,3 +19,9 @@ cd project-name
 make compile
 make deploy
 ```
+## Contributing
+This project is on the `gh-pages` branch, so you will need to clone that specifically before working on a pull request.
+
+```console
+git clone http://github.com/agencyrevolution/prototype-dnn.git -b gh-pages
+```
