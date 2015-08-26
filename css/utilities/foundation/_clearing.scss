@@ -213,13 +213,13 @@
     height: $clearing-active-img-height;
     overflow: hidden;
   }
-}
 
-%clearing-close {
-  padding-#{$default-float}: 0;
-  padding-top: 0;
-  position: absolute;
-  top: 10px;
-  #{$opposite-direction}: 20px;
-}
+  .clearing-close {
+    padding-#{$default-float}: 0;
+    padding-top: 0;
+    position: absolute;
+    top: 10px;
+    #{$opposite-direction}: 20px;
+  }
 
+}
