@@ -158,69 +158,68 @@
 
 %clearing-container {
 
-    .carousel {
-      background: $clearing-carousel-bg;
-      height: $clearing-carousel-height;
-      margin-top: 10px;
-      text-align: center;
+  .carousel {
+    background: $clearing-carousel-bg;
+    height: $clearing-carousel-height;
+    margin-top: 10px;
+    text-align: center;
 
-      > ul {
-        display: inline-block;
-        z-index: 999;
-        height: 100%;
+    > ul {
+      display: inline-block;
+      z-index: 999;
+      height: 100%;
+      position: relative;
+      float: none;
+
+      li {
+        clear: none;
+        cursor: $cursor-pointer-value;
+        display: block;
+        float: $default-float;
+        margin-#{$opposite-direction}: 0;
+        min-height: inherit;
+        opacity: .4;
+        overflow: hidden;
+        padding: 0;
         position: relative;
-        float: none;
+        width: $clearing-carousel-thumb-width;
 
-        li {
-          clear: none;
-          cursor: $cursor-pointer-value;
-          display: block;
-          float: $default-float;
-          margin-#{$opposite-direction}: 0;
-          min-height: inherit;
-          opacity: .4;
-          overflow: hidden;
-          padding: 0;
-          position: relative;
-          width: $clearing-carousel-thumb-width;
-
-          &.fix-height {
-            img {
-              height: 100%;
-              max-width: none;
-            }
-          }
-
-          a.th {
-            border: none;
-            box-shadow: none;
-            display: block;
-          }
-
+        &.fix-height {
           img {
-            cursor: $cursor-pointer-value !important;
-            width: 100% !important;
+            height: 100%;
+            max-width: none;
           }
-
-          &.visible { opacity: 1; }
-          &:hover { opacity: .8; }
         }
+
+        a.th {
+          border: none;
+          box-shadow: none;
+          display: block;
+        }
+
+        img {
+          cursor: $cursor-pointer-value !important;
+          width: 100% !important;
+        }
+
+        &.visible { opacity: 1; }
+        &:hover { opacity: .8; }
       }
     }
-
-    .visible-img {
-      background: $clearing-img-bg;
-      height: $clearing-active-img-height;
-      overflow: hidden;
-    }
   }
 
-  .clearing-close {
-    padding-#{$default-float}: 0;
-    padding-top: 0;
-    position: absolute;
-    top: 10px;
-    #{$opposite-direction}: 20px;
+  .visible-img {
+    background: $clearing-img-bg;
+    height: $clearing-active-img-height;
+    overflow: hidden;
   }
+}
+
+%clearing-close {
+  padding-#{$default-float}: 0;
+  padding-top: 0;
+  position: absolute;
+  top: 10px;
+  #{$opposite-direction}: 20px;
 }
 
