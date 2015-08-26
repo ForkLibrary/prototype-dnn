@@ -1,0 +1,16 @@
+<%- partial("partials/_head") %>
+
+  <% if(offcanvas == true) { %>
+    <%- partial("components/_offcanvas") %>
+  <% } else { %>
+
+  <%- partial("partials/_banner") %>
+
+  <div class="page-template page-template-layout">
+    <%- partial("partials/_main") %>
+  </div>
+
+  <%- partial("partials/_contentinfo") %>
+  <% } %>
+
+<%- partial("partials/_body-bottom") %>

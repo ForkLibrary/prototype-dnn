@@ -1,0 +1,8 @@
+{
+  "page": {
+    "layout": "_layout"
+  },
+  "index": {
+    "layout": "_home"
+  }
+}

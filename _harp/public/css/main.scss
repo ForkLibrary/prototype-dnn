@@ -1,0 +1,10 @@
+// Make sure the charset is set appropriately
+@charset 'UTF-8';
+
+@import 'settings';
+
+@import '../../node_modules/foundation-sites/scss/normalize';
+@import 'utilities/placeholders';
+
+@import 'layout/base';
+@import 'components/all';
