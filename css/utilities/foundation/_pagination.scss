@@ -1,0 +1,14 @@
+%pagination {
+  ul.pagination {
+    @include pagination;
+  }
+
+  /* Pagination centred wrapper */
+  .pagination-centered {
+    @include pagination-container(true);
+
+    ul.pagination {
+      @include pagination(true, false);
+    }
+  }
+}
