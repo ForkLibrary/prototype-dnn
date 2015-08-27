@@ -5,6 +5,7 @@ A ready-to-go Gulp and Harp project set up that does auto css injection via Brow
 ## Getting Started
 
 ```console
+npm i -g harp
 harp init -b agencyrevolution/prototype-dnn#gh-pages project-name
 cd project-name
 make install
