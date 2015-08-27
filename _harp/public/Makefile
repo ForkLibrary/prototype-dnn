@@ -1,13 +1,10 @@
 NOW := $(shell date +"%c" | tr ' :' '__')
 
 install:
-	cd _harp/
-	npm install
-	gulp
+	cd _harp; npm install
 
 server:
-	cd _harp/
-	gulp
+	cd _harp; gulp
 
 compile:
 	NODE_ENV=production harp compile _harp ./
