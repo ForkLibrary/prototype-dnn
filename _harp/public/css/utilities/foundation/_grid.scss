@@ -1,8 +1,9 @@
 $class-ranges: medium large;
 
-%row {
-  @include grid-row($behavior: false);
-}
+%row { @include grid-row($behavior: false); }
+%small-row { @media #{$small-only} { @include grid-row($behavior: false); } }
+%medium-row { @media #{$medium-only} { @include grid-row($behavior: false); } }
+%large-row { @media #{$large-only} { @include grid-row($behavior: false); } }
 
 %small-1 { @include grid-column(1); }
 %small-2 { @include grid-column(2); }
@@ -16,6 +17,34 @@ $class-ranges: medium large;
 %small-10 { @include grid-column(10); }
 %small-11 { @include grid-column(11); }
 %small-12 { @include grid-column(12); }
+
+
+%small-push-1 { @media #{$small-up} { @include grid-column($push: 1, $collapse: null, $float: false); } }
+%small-push-2 { @media #{$small-up} { @include grid-column($push: 2, $collapse: null, $float: false); } }
+%small-push-3 { @media #{$small-up} { @include grid-column($push: 3, $collapse: null, $float: false); } }
+%small-push-4 { @media #{$small-up} { @include grid-column($push: 4, $collapse: null, $float: false); } }
+%small-push-5 { @media #{$small-up} { @include grid-column($push: 5, $collapse: null, $float: false); } }
+%small-push-6 { @media #{$small-up} { @include grid-column($push: 6, $collapse: null, $float: false); } }
+%small-push-7 { @media #{$small-up} { @include grid-column($push: 7, $collapse: null, $float: false); } }
+%small-push-8 { @media #{$small-up} { @include grid-column($push: 8, $collapse: null, $float: false); } }
+%small-push-9 { @media #{$small-up} { @include grid-column($push: 9, $collapse: null, $float: false); } }
+%small-push-10 { @media #{$small-up} { @include grid-column($push: 10, $collapse: null, $float: false); } }
+%small-push-11 { @media #{$small-up} { @include grid-column($push: 11, $collapse: null, $float: false); } }
+%small-push-12 { @media #{$small-up} { @include grid-column($push: 12, $collapse: null, $float: false); } }
+
+%small-pull-1 { @media #{$small-up} { @include grid-column($pull: 1, $collapse: null, $float: false); } }
+%small-pull-2 { @media #{$small-up} { @include grid-column($pull: 2, $collapse: null, $float: false); } }
+%small-pull-3 { @media #{$small-up} { @include grid-column($pull: 3, $collapse: null, $float: false); } }
+%small-pull-4 { @media #{$small-up} { @include grid-column($pull: 4, $collapse: null, $float: false); } }
+%small-pull-5 { @media #{$small-up} { @include grid-column($pull: 5, $collapse: null, $float: false); } }
+%small-pull-6 { @media #{$small-up} { @include grid-column($pull: 6, $collapse: null, $float: false); } }
+%small-pull-7 { @media #{$small-up} { @include grid-column($pull: 7, $collapse: null, $float: false); } }
+%small-pull-8 { @media #{$small-up} { @include grid-column($pull: 8, $collapse: null, $float: false); } }
+%small-pull-9 { @media #{$small-up} { @include grid-column($pull: 9, $collapse: null, $float: false); } }
+%small-pull-10 { @media #{$small-up} { @include grid-column($pull: 10, $collapse: null, $float: false); } }
+%small-pull-11 { @media #{$small-up} { @include grid-column($pull: 11, $collapse: null, $float: false); } }
+%small-pull-12 { @media #{$small-up} { @include grid-column($pull: 12, $collapse: null, $float: false); } }
+
 
 %medium-1 { @media #{$medium-up} { @include grid-column(1); } }
 %medium-2 { @media #{$medium-up} { @include grid-column(2); } }

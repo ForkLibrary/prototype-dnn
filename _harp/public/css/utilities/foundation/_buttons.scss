@@ -17,8 +17,17 @@
   &--info { @include button-style($bg:$info-color, $bg-hover:$info-button-bg-hover, $border-color:$info-button-border-color); }
 
   &--large { @include button-size($padding:$button-lrg); }
+
   &--small { @include button-size($padding:$button-sml); }
+  &--small\@sm { @media #{$small-only} { @include button-size($padding:$button-sml); } }
+  &--small\@md { @media #{$medium-only} { @include button-size($padding:$button-sml); } }
+  &--small\@lg { @media #{$large-only} { @include button-size($padding:$button-sml); } }
+
   &--tiny { @include button-size($padding:$button-tny); }
+  &--tiny\@sm { @media #{$small-only} { @include button-size($padding:$button-tny); } }
+  &--tiny\@md { @media #{$medium-only} { @include button-size($padding:$button-tny); } }
+  &--tiny\@lg { @media #{$large-only} { @include button-size($padding:$button-tny); } }
+
   &--expand { @include button-size($padding:null, $full-width:true); }
 
   &--left-align {

@@ -39,3 +39,8 @@ $align-class-breakpoints:
 %lead { @include lead; }
 
 %subheader { @include subheader; }
+
+%no-bullet {
+  list-style: none;
+  margin-left: 0;
+}

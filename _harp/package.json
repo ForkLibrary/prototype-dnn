@@ -9,11 +9,11 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "harp": "^0.17.0",
-    "browser-sync": "^2.8.2"
+    "browser-sync": "^2.9.1"
   },
   "dependencies": {
     "fastclick": "^1.0.6",
-    "foundation-sites": "^5.5.2",
+    "foundation-sites": "zurb/foundation",
     "jquery": "^2.1.4",
     "modernizr": "^3.0.0-alpha.4"
   }
