@@ -3,6 +3,9 @@ NOW := $(shell date +"%c" | tr ' :' '__')
 install:
 	cd _harp; npm install
 
+edit:
+	cd _harp/public; vim
+
 server:
 	cd _harp; gulp
 
