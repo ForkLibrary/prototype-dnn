@@ -17,6 +17,8 @@ This has to happen from the root of your project so it can access your source in
 
 ```console
 cd project-name
+git init
+git checkout -b gh-pages
 make compile
 make deploy
 ```
